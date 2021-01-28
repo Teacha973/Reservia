@@ -1,0 +1,367 @@
+<!--HTML code for reservia web site-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservia</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer ></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+    <header class="header">
+        <img class="headerImage" src="C:\Site\reservia\images\logo\Reservia.svg" alt="Logo reservia"><!--Logo-->
+
+        <nav class="headerNav">
+        <a class="headerNavLink" href="#hosting" >Hébergement</a>
+        <a class="headerNavLink" href="#activity">Activités</a>
+        </nav>
+
+        <a class="headerSignup" href="#">S'inscrire</a><!--Sign Up link-->
+    </header>
+  <!-- HEADER -->
+
+
+  <!--MAIN : Specify the main content of the site-->
+    <main class="main">
+        <h1 class="mainTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="mainSubtitle">En plein centre ville ou en pleine nature</p>
+
+        <!--SEARCH SECTION-->
+        <form class="mainSearch" action="mainSearch.html" method="GET">
+            <span class="mainSearchIcon">
+                <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i> 
+            </span>
+            <input class="mainSearchInput" type="search" placeholder="Marseille, France">
+            <button class="mainSearchSubmit">Rechercher <i class="searchFormSubmitinputIcon fas fa-search"></i></button>
+
+        </form>
+        <!--SEARCH SECTION-->
+
+        <!--FILTRE-->
+        <div class="filters">
+            <h2 class="filtersTitle">Filtres</h2>
+            <div class="filterItemsBlock">
+                <span class="filtersItems"><i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon"></i>Économique</span>
+                <span class="filtersItems"><i class="fas fa-child searchFiltersFilterWrapiconIcon"></i>Familial</span>
+                <span class="filtersItems"><i class="fas fa-heart searchFiltersFilterWrapiconIcon"></i>Romantique</span>
+                <span class="filtersItems"><i class="fas fa-dog searchFiltersFilterWrapiconIcon"></i>Animaux autorisés</span>
+            </div>
+            <p class="filtersText"><i class="fas fa-info searchResultWrapiconIcon"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        <!--FILTRE-->
+
+        <!--HOSTING-->
+        <article class="hosting">
+            <h2 class="hostingTitle">Hébergements à Marseille</h2>
+
+            <section class="hostingPreview">
+
+                <a href="#">
+                    
+                    <figure class="hostingPreviewFigure">
+                         <img 
+                         class="hostingPreviewFigureImg"
+                         src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                         alt="lit superposé devant une fenêtre">
+                         <figcaption class="hostingPreviewFigureCaption">
+                             <h3 class="hostingPreviewFigureCaptionTitle">Auberge la Cannebière</h3>
+                         </figcaption>
+                    </figure>
+
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>25€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <figure class="hostingPreviewFigure">
+                         <img 
+                         class="hostingPreviewFigureImg"
+                         src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                         alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium">
+                         <figcaption class="hostingPreviewFigureCaption">
+                            <h3 class="hostingPreviewFigureCaptionTitle">Hôtel du port</h3>
+                         </figcaption>
+                    </figure>
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>52€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <figure class="hostingPreviewFigure">
+                         <img 
+                         class="hostingPreviewFigureImg"
+                         src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                         alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium">
+                         <figcaption class="hostingPreviewFigureCaption">
+                             <h3 class="hostingPreviewFigureCaptionTitle">Hôtel Les mouettes</h3>
+                         </figcaption>
+                    </figure>
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>76€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <figure class="hostingPreviewFigure">
+                         <img 
+                         class="hostingPreviewFigureImg"
+                         src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                         alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium">
+                         <figcaption class="hostingPreviewFigureCaption">
+                             <h3 class="hostingPreviewFigureCaptionTitle">Auberge de la mer</h3>
+                         </figcaption>
+                    </figure>
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>46€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <figure class="hostingPreviewFigure">
+                         <img 
+                         class="hostingPreviewFigureImg"
+                         src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
+                         alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium">
+                         <figcaption class="hostingPreviewFigureCaption">
+                             <h3 class="hostingPreviewFigureCaptionTitle">Auberge Le Panier</h3>
+                         </figcaption>
+                    </figure>
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>23€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <figure class="hostingPreviewFigure">
+                         <img 
+                         class="hostingPreviewFigureImg"
+                         src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
+                         alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium">
+                         <figcaption class="hostingPreviewFigureCaption">
+                             <h3 class="hostingPreviewFigureCaptionTitle">Hôtel chez Amina</h3>
+                         </figcaption>
+                    </figure>
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>96€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                    </div>
+                </a>
+            </section>
+        </article>
+
+        <aside class="trend">
+            <h2 class="trendTitle">Les plus popluplaires <i class="fas fa-chart-line"></i></h2>
+            <section class="trendPreview">
+                <a href="#">
+                    <figure class="tendPreviewFigure">
+                        <img 
+                        class="trendPreviewFigureImg"
+                        src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
+                        alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium">
+                        <figcaption class="hostingPreviewFigureCaption">
+                            <h3 class="hostingPreviewFigureCaptionTitle">Hôtel Le soleil du matin</h3>
+                        </figcaption>
+                    </figure>
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>126€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <figure class="tendPreviewFigure">
+                        <img 
+                        class="trendPreviewFigureImg"
+                        src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" 
+                        alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium">
+                        <figcaption class="hostingPreviewFigureCaption">
+                            <h3 class="hostingPreviewFigureCaptionTitle">Au coeur de l'eau Chambres d'hôtes</h3>
+                        </figcaption>
+                    </figure>
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>71€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <figure class="tendPreviewFigure">
+                        <img 
+                        class="trendPreviewFigureImg"
+                        src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+                        alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium">
+                        <figcaption class="hostingPreviewFigureCaption">
+                            <h3 class="hostingPreviewFigureCaptionTitle">Hôtel Tout bleu et Blanc</h3>
+                        </figcaption>
+                    </figure>
+                    <p class="hostingPreviewPrice"> Nuit à partir de <strong>68€</strong></p>
+                    <div class="hostingPreviewStar">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                    </div>
+                </a>
+            </section>
+        </aside>
+        <!--HOSTING-->
+
+        <!--ACTIVITY-->
+        <article class="activity">
+            <h2 class="activityTitle">Activités à Marseille</h2>
+
+      <a href="#" class="activityPreview">
+
+        <div class="activityPreviewItems">
+          <img 
+            class="activityPreviewItemsImg"
+            src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+            alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium" 
+          >
+        </div>
+
+        <h3 class="activityCaptionTitle">Vieux Port</h3>
+
+      </a>
+
+      <a href="#" class="activityPreview">
+
+        <div class="activityPreviewItems">
+          <img 
+            class="activityPreviewItemsImg"
+            src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
+            alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium" 
+          >
+        </div>
+
+        <h3 class="activityCaptionTitle">Fort de Pomègues</h3>
+
+      </a>
+
+      <a href="#" class="activityPreview">
+
+        <div class="activityPreviewItems">
+          <img 
+            class="activityPreviewItemsImg"
+            src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
+            alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium" 
+          >
+        </div>
+
+        <h3 class="activityCaptionTitle">Parc National des Calanques</h3>
+      </a>
+
+      <a href="#" class="activityPreview">
+
+        <div class="activityPreviewItems">
+          <img 
+            class="activityPreviewItemsImg"
+            src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
+            alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium" 
+          >
+        </div>
+
+        <h3 class="activityCaptionTitle">Notre-Dame-de-la-Garde</h3>
+      </a>
+
+      <a href="#" class="activityPreview">
+
+        <div class="activityPreviewItems">
+
+          <img 
+            class="activityPreviewItemsImg"
+            src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
+            alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium" 
+          >
+        </div>
+
+        <h3 class="activityCaptionTitle">Île du Frioul</h3>
+      </a>
+
+      <a href="#" class="activityPreview">
+
+        <div class="activityPreviewItems">
+          <img 
+            class="activityPreviewItemsImg"
+            src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
+            alt="Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium " 
+          >
+        </div>
+
+        <h3 class="activityCaptionTitle">Parc Longchamp</h3>
+      </a>
+        </article>
+        <!--ACTIVITY-->
+
+    </main>
+<!--MAIN : Specify the main content of the site-->
+
+<!--FOOTER : Specify the botom and map of the site-->
+  <footer class="footer">
+        <nav class="footerArea">
+
+            <div class="footerAreaColumn">
+                <h3 class="footerAreaColumnTitle">A propos</h3>
+                <a href="#" class="footerAreaColumnOption">Fonctionnement du site</a>
+                <a href="#" class="footerAreaColumnOption">Conditions générales de vente</a>
+                <a href="#" class="footerAreaColumnOption">Données et confidentialités</a>
+            </div>
+
+            <div class="footerAreaColumn">
+                <h3 class="footerAreaColumnTitle">Nos hébergement</h3>
+                <a href="#" class="footerAreaColumnOption">Charte qualité</a>
+                <a href="#" class="footerAreaColumnOption">Soumettre votre hotel</a>
+            </div>
+            
+            <div class="footerAreaColumn">
+                <h3 class="footerAreaColumnTitle">Assitance</h3>
+                <a href="#" class="footerAreaColumnOption">Centre d'aide</a>
+                <a href="#" class="footerAreaColumnOption">Nous contacter</a>
+            </div>
+
+        </nav>
+  </footer>
+<!--FOOTER : Specify the botom and map of the site-->
+</body>
+</html>
